@@ -22,3 +22,6 @@ body{
     box-sizing: border-box;
 }
 
+.grid-cell:hover{
+    background-color: black;
+}
