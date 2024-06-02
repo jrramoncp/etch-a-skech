@@ -24,7 +24,7 @@ function createDivs(number){
 
     cell.addEventListener("mouseover", () => {
         if (isMouseDown) {
-            cell.style.backgroundColor = "blue";
+            cell.style.backgroundColor = "black";
         }
     });
 
@@ -51,7 +51,7 @@ button = document.createElement("button")
 button.classList.add ("button")
 button.textContent = "TAMAÑO"
 button.addEventListener("click", () => {
-    numero = prompt("¿Rejustar tamaño?");
+    numero = prompt("¿Rejustar tamaño?", "No se recomienda mas de 100");
     document.getElementById("container").innerHTML="";
     createDivs(numero);
 });
@@ -81,7 +81,11 @@ reiniciar.addEventListener("click", () => {
 }})
 botones.appendChild(reiniciar);
 
+titulo = document.createElement("h1");
+titulo.classList.add("titulo")
+titulo.textContent = "PIZARRA";
 
+document.body.appendChild(titulo)
 
 createDivs(numero);
 
