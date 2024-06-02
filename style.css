@@ -5,6 +5,7 @@ body{
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    flex-direction: column-reverse;
 }
 
 
@@ -15,10 +16,18 @@ body{
     width: 600px;
     height: 600px;
     border: 1px solid black;
+    flex-direction: column;
 }   
 
+.botones{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 600px;
+    margin: 5px;
+}
 .grid-cell{
-    border: 1px solid black;
+    border:1px solid black;
     box-sizing: border-box;
 }
 
